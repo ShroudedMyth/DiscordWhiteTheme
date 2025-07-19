@@ -20,8 +20,11 @@
   height: var(--TB-height, 48px);
   width: var(--TB-width, 40px);
 }
-.platform-win .winButton__421ed:not(.winButtonClose__421ed):hover {
- background-color: #F19CBB80; 
+
+.platform-win #app-mount .winButton__421ed:not(.winButtonClose__421ed):hover {
+  background-color: #F19CBB80 !important;
+}
+
 }
 .platform-win .container__9293f {
   padding-right: var(--TB-header-padding);
