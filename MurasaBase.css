@@ -5,7 +5,7 @@
 :root {
   --background: url("https://raw.githubusercontent.com/Murasa86/DiscrodWhiteTheme/refs/heads/main/whitecore.png");
   --font:                       "Inter";
-  --transparencyalpha:          0.7;
+  --transparencyalpha:          0.0;
   --transparencycolor:			    0,0,0;
 	--messagetransparency:			  0;
 	--guildchanneltransparency:		0;
