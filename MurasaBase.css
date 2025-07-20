@@ -3,7 +3,7 @@
 @import url("https://raw.githubusercontent.com/ShroudedMyth/DiscordWhiteTheme/refs/heads/main/BasicBackground.css");
 
 :root {
-  --background: url("https://raw.githubusercontent.com/Murasa86/DiscrodWhiteTheme/refs/heads/main/whitecore.png");
+  --background: url("https://raw.githubusercontent.com/ShroudedMyth/DiscordWhiteTheme/refs/heads/main/whitecore%20(1).png");
   --font: "Inter";
   --transparencyalpha: 0.0;
   --transparencycolor: 0,0,0;
@@ -15,11 +15,6 @@
   
   --memberlist-bg: #404040;
   --guildlist-bg: #404040;
-}
-
-
-[class*="messageContent"] {
-  color: rgb(183, 132, 167) !important;
 }
 
 
@@ -36,7 +31,8 @@
 }
 
 :root, .theme-dark, .theme-light {
-  --accentcolor: 241, 156, 187 !important;
+  --accentcolor: 92, 25, 174 !important;
+  
   --memberlist-background: var(--memberlist-bg) !important;
   --guildchannel-background: var(--guildlist-bg) !important;
 }
