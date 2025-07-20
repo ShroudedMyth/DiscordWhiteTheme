@@ -39,3 +39,15 @@
 	
 	--version1_0_5:			none;				/* DO NOT CHANGE THIS VARIABLE , USED TO HIDE UPDATE NOTICE										*/
 }
+
+:root {
+  --memberlist-background: #404040;
+  --guildlist-background: #404040;
+}
+
+.membersWrap-2h-GB4, 
+.members-1998pB,
+.guilds-2JjMmN, 
+.guildsWrapper-5TJh6A {
+  background-color: var(--memberlist-background) !important;
+}
