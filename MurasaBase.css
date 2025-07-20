@@ -47,3 +47,36 @@
   background-color: var(--guildlist-bg) !important;
   opacity: 1 !important;
 }
+
+.watermark__0d179, 
+[class*="Watermark"],
+[class*="watermark"], 
+[class*="BuildOverride"],
+[class*="appInfo"], 
+[class*="version"], 
+[class*="DebugInfo"], 
+[class*="Footer"], 
+[class*="footer"] 
+{
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+}
+
+[class*="Watermark"]::after,
+[class*="watermark"]::after,
+[class*="BuildOverride"]::after {
+    content: none !important;
+}
+
+body::after,
+#app-mount::after,
+.app::after {
+    content: none !important;
+}
