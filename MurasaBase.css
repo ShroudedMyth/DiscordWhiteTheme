@@ -15,31 +15,48 @@
   
   --memberlist-bg: #404040;
   --guildlist-bg: #404040;
+  
+  /* Новые переменные для чата (работают в любом режиме) */
+  --chat-text-color: rgb(255, 20, 147); /* #FF1493 */
+  --chat-username-color: rgb(255, 105, 180); /* #FF69B4 */
+  --chat-timestamp-color: rgba(255, 20, 147, 0.7);
 }
 
+/* Стили чата для ЛЮБОЙ темы */
+[class*="messageContent"], 
+[class*="markup"] {
+  color: var(--chat-text-color) !important;
+}
+
+[class*="username"] {
+  color: var(--chat-username-color) !important;
+}
+
+[class*="timestamp"] {
+  color: var(--chat-timestamp-color) !important;
+}
+
+/* Ваши оригинальные dark-стили (остаются без изменений) */
 .theme-dark {
-  /* Текст */
-  --text-normal: rgb(255, 20, 147) !important; /* Deep Pink */
-  --text-muted: rgb(255, 20, 147) !important;
-  --header-primary: rgb(255, 20, 147) !important;
-  --header-secondary: rgb(255, 20, 147) !important;
-  --channels-default: rgb(255, 20, 147) !important;
-  
-  /* Интерактивные элементы */
-  --interactive-normal: rgb(255, 20, 147) !important;
-  --interactive-hover: rgb(255, 105, 180) !important; /* Более светлый розовый */
-  --interactive-active: rgb(255, 105, 180) !important;
-  
-  /* Фоны */
+  --text-normal: var(--chat-text-color) !important;
+  --text-muted: var(--chat-text-color) !important;
+  --header-primary: var(--chat-text-color) !important;
+  --header-secondary: var(--chat-text-color) !important;
+  --channels-default: var(--chat-text-color) !important;
+  --interactive-normal: var(--chat-text-color) !important;
+  --interactive-hover: var(--chat-username-color) !important;
+  --interactive-active: var(--chat-username-color) !important;
   --background-modifier-accent: rgba(255, 20, 147, 0.2) !important;
 }
 
+/* Общие настройки */
 :root, .theme-dark, .theme-light {
   --accentcolor: 241, 156, 187 !important;
   --memberlist-background: var(--memberlist-bg) !important;
   --guildchannel-background: var(--guildlist-bg) !important;
 }
 
+/* Ваши оригинальные стили элементов */
 .membersWrap-2h-GB4, 
 .members-1998pB {
   background-color: var(--memberlist-bg) !important;
@@ -52,7 +69,8 @@
   opacity: 1 !important;
 }
 
-/* Дополнительные переопределения для гарантии */
-body, .container-2cd8Mz, .scrollerBase-_bVAAt {
-  color: rgb(255, 20, 147) !important;
+/* Дополнительные гарантии */
+.container-2cd8Mz,
+.scrollerBase-_bVAAt {
+  color: var(--chat-text-color) !important;
 }
