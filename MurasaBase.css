@@ -17,12 +17,12 @@
   --guildlist-bg: #404040;
 }
 
-/* ТОЛЬКО текст сообщений в чате */
+
 [class*="messageContent"] {
-  color: rgb(255, 141, 161) !important; /* #FF1493 */
+  color: rgb(255, 141, 161) !important;
 }
 
-/* Сохраняем ВСЕ ваши оригинальные стили без изменений */
+
 .theme-dark {
   --text-normal: #ffffff;
   --text-muted: #ffffff;
