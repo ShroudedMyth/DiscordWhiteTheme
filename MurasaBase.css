@@ -13,7 +13,6 @@
   --memberlisttransparency: 0.3;
   --accentcolor: 241, 156, 187;
   
-  /* Добавляем новые переменные для цветов */
   --memberlist-bg: #404040;
   --guildlist-bg: #404040;
 }
@@ -30,16 +29,13 @@
   --background-modifier-accent: #fff2;
 }
 
-/* Принудительное переопределение (как с акцентным цветом) */
 :root, .theme-dark, .theme-light {
   --accentcolor: 241, 156, 187 !important;
   
-  /* Добавляем переопределение для списков */
   --memberlist-background: var(--memberlist-bg) !important;
   --guildchannel-background: var(--guildlist-bg) !important;
 }
 
-/* Жесткие стили для элементов */
 .membersWrap-2h-GB4, 
 .members-1998pB {
   background-color: var(--memberlist-bg) !important;
