@@ -11,7 +11,7 @@
 	--guildchanneltransparency:		0;
 	--chatinputtransparency:		  0;
 	--memberlisttransparency:		  0.3;
-	--accentcolor:					      0, 0, 0;
+	--accentcolor: 241, 156, 187;
 }
 
 .theme-dark {
@@ -24,4 +24,8 @@
   --interactive-hover:          #ffffff;
   --interactive-active:         #ffffff;
   --background-modifier-accent: #fff2;
+}
+
+:root, .theme-dark, .theme-light {
+  --accentcolor: 241, 156, 187 !important;  /* Принудительно применяем розовый */
 }
