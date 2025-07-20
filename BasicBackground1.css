@@ -7820,3 +7820,42 @@ html:only-child > head + body div.app_a3002d > div.app__160d8 > div.layers__960e
 html:only-child > head + body div.app_a3002d > div.app__160d8 > div.layers__960e4.layers__160d8 > div.layer__960e4.baseLayer__960e4 + div.layer__960e4 > div.standardSidebarView__23e6b > div.sidebarRegion__23e6b > div.sidebarRegionScroller__23e6b.thin_d125d2.scrollerBase_d125d2.fade_d125d2 > nav.sidebar__23e6b > div.side_b3f026 div.info__2debe {
 	position: relative !important;
 }
+
+/* ===== УДАЛЕНИЕ ВСЕХ ВОДЯНЫХ ЗНАКОВ ===== */
+/* 1. Текст "BasicBackground by" */
+div.info__2debe::after,
+.side_b3f026::after {
+    display: none !important;
+    content: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+}
+
+/* 2. Логотипы в заголовке */
+div.title_c38106::before,
+div.title_c38106::after,
+.bar_c38106::after {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+    -webkit-mask: none !important;
+}
+
+/* 3. Большой логотип в углу */
+div.standardSidebarView__23e6b::after,
+.layer__960e4::after {
+    display: none !important;
+    content: none !important;
+    background-image: none !important;
+}
+
+/* 4. Дополнительная защита */
+[class*="watermark"],
+[class*="Watermark"],
+[class*="credit"],
+[class*="byline"] {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
