@@ -3,49 +3,68 @@
 @import url("https://raw.githubusercontent.com/ShroudedMyth/DiscordWhiteTheme/refs/heads/main/BasicBackground.css");
 
 :root {
+  /* Основные настройки */
   --background: url("https://raw.githubusercontent.com/Murasa86/DiscrodWhiteTheme/refs/heads/main/whitecore.png");
-  --font: "Inter";
+  --font: "Inter", sans-serif;
+  
+  /* Прозрачность */
   --transparencyalpha: 0.0;
   --transparencycolor: 0,0,0;
   --messagetransparency: 0;
   --guildchanneltransparency: 0;
   --chatinputtransparency: 0;
   --memberlisttransparency: 0.3;
-  --accentcolor: 241, 156, 187;
   
+  /* Цветовая схема */
+  --accentcolor: 241, 156, 187;
   --memberlist-bg: #404040;
   --guildlist-bg: #404040;
 }
 
 .theme-dark {
-  --text-normal: #ffffff;
-  --text-muted: #ffffff;
-  --header-primary: #ff4f75;
-  --channels-default: #ff90a2;
-  --header-secondary: #ff90a2;
-  --interactive-normal: #ff90a2;
-  --interactive-hover: #ffffff;
-  --interactive-active: #ffffff;
-  --background-modifier-accent: #fff2;
+  /* Текст */
+  --text-normal: #FF1493; /* Изменено на Deep Pink */
+  --text-muted: #FF1493; /* Изменено на Deep Pink */
+  --header-primary: #FF1493; /* Изменено на Deep Pink */
+  --header-secondary: #FF1493; /* Изменено на Deep Pink */
+  --channels-default: #FF1493; /* Изменено на Deep Pink */
+  
+  /* Интерактивные элементы */
+  --interactive-normal: #FF1493; /* Изменено на Deep Pink */
+  --interactive-hover: #FF69B4; /* Hot Pink для hover */
+  --interactive-active: #FF69B4; /* Hot Pink для active */
+  
+  /* Фоны */
+  --background-modifier-accent: rgba(255, 20, 147, 0.2); /* Полупрозрачный Deep Pink */
 }
 
+/* Общие настройки для всех тем */
 :root, .theme-dark, .theme-light {
   --accentcolor: 241, 156, 187 !important;
-  
   --memberlist-background: var(--memberlist-bg) !important;
   --guildchannel-background: var(--guildlist-bg) !important;
 }
 
-.membersWrap-2h-GB4, 
+/* Кастомные стили для элементов */
+.membersWrap-2h-GB4,
 .members-1998pB {
   background-color: var(--memberlist-bg) !important;
   opacity: 1 !important;
 }
 
-.guilds-2JjMmN, 
+.guilds-2JjMmN,
 .guildsWrapper-5TJh6A {
   background-color: var(--guildlist-bg) !important;
   opacity: 1 !important;
+}
+
+/* Дополнительные улучшения */
+.container-2cd8Mz {
+  background-color: transparent !important;
+}
+
+.scrollerBase-_bVAAt {
+  background-color: transparent !important;
 }
 
 
