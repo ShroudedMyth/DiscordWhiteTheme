@@ -31,7 +31,7 @@
 }
 
 :root, .theme-dark, .theme-light {
-  --accentcolor: 92, 25, 174 !important;
+  --accentcolor: 241, 156, 187 !important;
   
   --memberlist-background: var(--memberlist-bg) !important;
   --guildchannel-background: var(--guildlist-bg) !important;
