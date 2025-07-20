@@ -18,20 +18,24 @@
 }
 
 .theme-dark {
-  --text-normal: #ffffff;
-  --text-muted: #ffffff;
-  --header-primary: #ff4f75;
-  --channels-default: #ff90a2;
-  --header-secondary: #ff90a2;
-  --interactive-normal: #ff90a2;
-  --interactive-hover: #ffffff;
-  --interactive-active: #ffffff;
-  --background-modifier-accent: #fff2;
+  /* Текст */
+  --text-normal: rgb(255, 20, 147) !important; /* Deep Pink */
+  --text-muted: rgb(255, 20, 147) !important;
+  --header-primary: rgb(255, 20, 147) !important;
+  --header-secondary: rgb(255, 20, 147) !important;
+  --channels-default: rgb(255, 20, 147) !important;
+  
+  /* Интерактивные элементы */
+  --interactive-normal: rgb(255, 20, 147) !important;
+  --interactive-hover: rgb(255, 105, 180) !important; /* Более светлый розовый */
+  --interactive-active: rgb(255, 105, 180) !important;
+  
+  /* Фоны */
+  --background-modifier-accent: rgba(255, 20, 147, 0.2) !important;
 }
 
 :root, .theme-dark, .theme-light {
   --accentcolor: 241, 156, 187 !important;
-  --text-normal: rgb(255, 20, 147) !important;
   --memberlist-background: var(--memberlist-bg) !important;
   --guildchannel-background: var(--guildlist-bg) !important;
 }
@@ -48,3 +52,7 @@
   opacity: 1 !important;
 }
 
+/* Дополнительные переопределения для гарантии */
+body, .container-2cd8Mz, .scrollerBase-_bVAAt {
+  color: rgb(255, 20, 147) !important;
+}
