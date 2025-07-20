@@ -4,28 +4,50 @@
 
 :root {
   --background: url("https://raw.githubusercontent.com/Murasa86/DiscrodWhiteTheme/refs/heads/main/whitecore.png");
-  --font:                       "Inter";
-  --transparencyalpha:          0.0;
-  --transparencycolor:			    0,0,0;
-	--messagetransparency:			  0;
-	--guildchanneltransparency:		0;
-	--chatinputtransparency:		  0;
-	--memberlisttransparency:		  0.3;
-	--accentcolor: 241, 156, 187;
+  --font: "Inter";
+  --transparencyalpha: 0.0;
+  --transparencycolor: 0,0,0;
+  --messagetransparency: 0;
+  --guildchanneltransparency: 0;
+  --chatinputtransparency: 0;
+  --memberlisttransparency: 0.3;
+  --accentcolor: 241, 156, 187;
+  
+  /* Добавляем новые переменные для цветов */
+  --memberlist-bg: #404040;
+  --guildlist-bg: #404040;
 }
 
 .theme-dark {
-  --text-normal:                #ffffff;
-  --text-muted:                 #ffffff;
-  --header-primary:             #ff4f75;
-  --channels-default:           #ff90a2;
-  --header-secondary:           #ff90a2;
-  --interactive-normal:         #ff90a2;
-  --interactive-hover:          #ffffff;
-  --interactive-active:         #ffffff;
+  --text-normal: #ffffff;
+  --text-muted: #ffffff;
+  --header-primary: #ff4f75;
+  --channels-default: #ff90a2;
+  --header-secondary: #ff90a2;
+  --interactive-normal: #ff90a2;
+  --interactive-hover: #ffffff;
+  --interactive-active: #ffffff;
   --background-modifier-accent: #fff2;
 }
 
+/* Принудительное переопределение (как с акцентным цветом) */
 :root, .theme-dark, .theme-light {
-  --accentcolor: 241, 156, 187 !important;  
+  --accentcolor: 241, 156, 187 !important;
+  
+  /* Добавляем переопределение для списков */
+  --memberlist-background: var(--memberlist-bg) !important;
+  --guildchannel-background: var(--guildlist-bg) !important;
+}
+
+/* Жесткие стили для элементов */
+.membersWrap-2h-GB4, 
+.members-1998pB {
+  background-color: var(--memberlist-bg) !important;
+  opacity: 1 !important;
+}
+
+.guilds-2JjMmN, 
+.guildsWrapper-5TJh6A {
+  background-color: var(--guildlist-bg) !important;
+  opacity: 1 !important;
 }
