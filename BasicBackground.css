@@ -65,17 +65,4 @@
 .guilds-2JjMmN > div {
   background-color: inherit !important;
   opacity: 1 !important;
-}
-
-.basicBackground-watermark,
-[class*="DevilBro"],
-[class*="watermark"] {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    height: 0 !important;
-}
-
-:root {
-    --version1_0_5: none !important;
-}
+} 
