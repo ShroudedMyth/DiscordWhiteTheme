@@ -1,2 +1,2 @@
 ![demonstration](https://github.com/ShroudedMyth/DiscordWhiteTheme/blob/main/demonstration.jpg)
-[Dowloand Theme White-core.css](https://github.com/ShroudedMyth/DiscordWhiteTheme/raw/main/White-core.css)
+[Download Theme White-core.css](https://github.com/ShroudedMyth/DiscordWhiteTheme/raw/main/White-core.css?download=1)
